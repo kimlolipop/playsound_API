@@ -6,10 +6,10 @@ app = Flask(__name__)
 
 files = ["AEIOU_01.mp3","Money.mp3"]
 
-@app.route('/', methods=['GET'])
-def home():
-    return 'Hello World'
-                         
+
+@app.route('/')
+def hello():
+    return "Hello Flask-Heroku"
 
 @app.route('/playsound/<int:id>', methods=['GET'])
 def play(id):
