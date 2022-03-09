@@ -1,7 +1,7 @@
 import requests
 
-url = "http://127.0.0.1:5678/playsound"
-id=0
+url = "http://127.0.0.1:5000/playsound"
+id=1
 response = requests.get(url+"/"+str(id))
 message = response.json()
 print(message)
